@@ -409,3 +409,10 @@ body {
     color: #648268;
     margin-right: 5px;
 }
+
+/* Hide nav-bar on specific pages */
+#landing .nav-bar,
+#login .nav-bar,
+#signup .nav-bar {
+    display: none;
+}
