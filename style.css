@@ -177,3 +177,31 @@ body {
 .back-button:hover i {
     color: #4a6a4a; /* Darker green on hover */
 }
+
+/* Landing Page Logo */
+.main-logo {
+    width: 200px; /* Adjust this value to your preferred size */
+    height: auto; /* Maintain aspect ratio */
+    display: block;
+    margin: 0 auto 20px; /* Center the logo and add space below */
+}
+
+/* Landing Page Content */
+.landing-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 60vh; /* Full viewport height */
+    padding: 20px;
+    text-align: center;
+}
+
+/* Landing Page Buttons */
+.auth-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    max-width: 250px;
+}
