@@ -695,6 +695,85 @@
     </div>
 </div>
 
+<!-- Favorites Page -->
+<div id="favorites" class="page">
+    <!-- Back Button -->
+    <button class="back-button" onclick="goBack()">
+        <i class="fas fa-arrow-left"></i>
+    </button>
+
+    <!-- Favorites Title -->
+    <h1 class="header">Favorites</h1>
+
+    <!-- Favorites Content -->
+    <div class="favorites-content">
+        <!-- Example Favorited Post 1 -->
+        <div class="post-card">
+            <div class="post-header">
+                <img src="images/user1.jpg" class="user-avatar" alt="User 1">
+                <span class="username">surfer_dude</span>
+            </div>
+            <div class="post-image">
+                <img src="images/post1.jpg" alt="Post 1">
+            </div>
+            <div class="post-actions">
+                <button class="like-button liked" onclick="toggleLike(this)">
+                    <i class="fas fa-heart"></i>
+                    <span class="like-count">248</span>
+                </button>
+            </div>
+            <div class="post-caption">
+                <strong>surfer_dude</strong> Check out this gnarly surf shop I found 🌊☀️ #surflife
+            </div>
+        </div>
+
+        <!-- Example Favorited Post 2 -->
+        <div class="post-card">
+            <div class="post-header">
+                <img src="images/user2.jpg" class="user-avatar" alt="User 2">
+                <span class="username">pizza_lover</span>
+            </div>
+            <div class="post-image">
+                <img src="images/post2.jpg" alt="Post 2">
+            </div>
+            <div class="post-actions">
+                <button class="like-button liked" onclick="toggleLike(this)">
+                    <i class="fas fa-heart"></i>
+                    <span class="like-count">165</span>
+                </button>
+            </div>
+            <div class="post-caption">
+                <strong>pizza_lover</strong> Friday night special at Freznos! 🍕🔥
+            </div>
+        </div>
+
+        <!-- Add more favorited posts as needed -->
+    </div>
+
+    <!-- Navigation Bar -->
+    <div class="nav-bar">
+        <div class="nav-item" onclick="showPage('home')">
+            <i class="fas fa-home"></i>
+            <span>Home</span>
+        </div>
+        <div class="nav-item" onclick="showPage('feed')">
+            <i class="fas fa-list"></i>
+            <span>Feed</span>
+        </div>
+        <div class="nav-item logo-nav" onclick="showPage('tokens')">
+            <img src="images/logo.png" alt="DRYFT Logo">
+        </div>
+        <div class="nav-item" onclick="showPage('map')">
+            <i class="fas fa-map-marked"></i>
+            <span>Map</span>
+        </div>
+        <div class="nav-item" onclick="showPage('profile')">
+            <i class="fas fa-user"></i>
+            <span>Profile</span>
+        </div>
+    </div>
+</div>
+
     <script src="script.js"></script>
 </body>
 </html>
