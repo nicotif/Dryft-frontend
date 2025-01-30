@@ -446,21 +446,122 @@
                 </div>
             </div>
 
-    <!-- Tokens Page -->
-    <div id="tokens" class="page">
-        <button class="back-button" onclick="goBack()">
-            <i class="fas fa-arrow-left"></i>
-        </button>
-        <h2 class="header">TOKENS</h2>
-        <div class="business-card">
-            <h4>Pizza Planet</h4>
-            <p>Collected: 8</p>
+<!-- Tokens Page -->
+<div id="tokens" class="page">
+    <!-- Back Button -->
+    <button class="back-button" onclick="goBack()">
+        <i class="fas fa-arrow-left"></i>
+    </button>
+
+    <!-- Tokens Title -->
+    <h1 class="header">Tokens</h1>
+
+    <!-- User Stats -->
+    <div class="user-stats">
+        <div class="stat">
+            <span class="stat-number" id="total-tokens">12</span>
+            <span class="stat-label">Tokens Collected</span>
         </div>
-        <!-- Navigation Bar -->
-        <div class="nav-bar">
-            <!-- Same navigation bar structure -->
+        <div class="stat">
+            <span class="stat-number" id="user-ranking">#4</span>
+            <span class="stat-label">Ranking</span>
         </div>
     </div>
+
+        <!-- Scan New Token Button -->
+        <button class="scan-token-button" onclick="showPage('scanToken')">
+            <i class="fas fa-camera"></i> Scan New Token
+        </button>
+
+    <!-- Tokens Grid -->
+    <div class="tokens-grid">
+        <!-- Token 1 -->
+        <img src="images/token1.png" alt="Token 1" class="token-image">
+
+        <!-- Token 2 -->
+        <img src="images/token2.png" alt="Token 2" class="token-image">
+
+        <!-- Token 3 -->
+        <img src="images/token3.png" alt="Token 3" class="token-image">
+
+        <!-- Token 4 -->
+        <img src="images/token4.png" alt="Token 4" class="token-image">
+
+        <!-- Token 5 -->
+        <img src="images/Token4.png" alt="Token 5" class="token-image">
+
+        <!-- Token 6 -->
+        <img src="images/Token4.png" alt="Token 6" class="token-image">
+
+        <!-- Token 6 -->
+        <img src="images/Token4.png" alt="Token 6" class="token-image">
+
+        <!-- Token 6 -->
+        <img src="images/Token4.png" alt="Token 6" class="token-image">
+
+        <!-- Token 6 -->
+        <img src="images/Token4.png" alt="Token 6" class="token-image">
+
+        <!-- Token 6 -->
+        <img src="images/Token4.png" alt="Token 6" class="token-image">
+
+        <!-- Token 6 -->
+        <img src="images/Token4.png" alt="Token 6" class="token-image">
+
+        <!-- Token 6 -->
+        <img src="images/Token4.png" alt="Token 6" class="token-image">
+
+        <!-- Add more tokens as needed -->
+    </div>
+
+
+    <!-- Navigation Bar -->
+    <div class="nav-bar">
+        <div class="nav-item" onclick="showPage('home')">
+            <i class="fas fa-home"></i>
+            <span>Home</span>
+        </div>
+        <div class="nav-item" onclick="showPage('feed')">
+            <i class="fas fa-list"></i>
+            <span>Feed</span>
+        </div>
+        <div class="nav-item logo-nav" onclick="showPage('tokens')">
+            <img src="images/logo.png" alt="DRYFT Logo">
+        </div>
+        <div class="nav-item" onclick="showPage('map')">
+            <i class="fas fa-map-marked"></i>
+            <span>Map</span>
+        </div>
+        <div class="nav-item" onclick="showPage('profile')">
+            <i class="fas fa-user"></i>
+            <span>Profile</span>
+        </div>
+    </div>
+</div>
+
+    <!-- Navigation Bar -->
+    <div class="nav-bar">
+        <div class="nav-item" onclick="showPage('home')">
+            <i class="fas fa-home"></i>
+            <span>Home</span>
+        </div>
+        <div class="nav-item" onclick="showPage('feed')">
+            <i class="fas fa-list"></i>
+            <span>Feed</span>
+        </div>
+        <div class="nav-item logo-nav" onclick="showPage('tokens')">
+            <img src="images/logo.png" alt="DRYFT Logo">
+        </div>
+        <div class="nav-item" onclick="showPage('map')">
+            <i class="fas fa-map-marked"></i>
+            <span>Map</span>
+        </div>
+        <div class="nav-item" onclick="showPage('profile')">
+            <i class="fas fa-user"></i>
+            <span>Profile</span>
+        </div>
+    </div>
+</div>
 
                 <!-- Navigation Bar -->
                 <div class="nav-bar">
@@ -661,7 +762,7 @@
         <!-- Friend 3: Dwayne -->
         <div class="friend-item">
             <img src="images/friend3.jpg" alt="Dwayne" class="friend-avatar">
-            <span class="friend-name">Dwayne</span>
+            <span class="friend-name">Britt</span>
         </div>
 
         <!-- Friend 4: Casey -->
@@ -748,6 +849,71 @@
         </div>
 
         <!-- Add more favorited posts as needed -->
+    </div>
+
+    <!-- Navigation Bar -->
+    <div class="nav-bar">
+        <div class="nav-item" onclick="showPage('home')">
+            <i class="fas fa-home"></i>
+            <span>Home</span>
+        </div>
+        <div class="nav-item" onclick="showPage('feed')">
+            <i class="fas fa-list"></i>
+            <span>Feed</span>
+        </div>
+        <div class="nav-item logo-nav" onclick="showPage('tokens')">
+            <img src="images/logo.png" alt="DRYFT Logo">
+        </div>
+        <div class="nav-item" onclick="showPage('map')">
+            <i class="fas fa-map-marked"></i>
+            <span>Map</span>
+        </div>
+        <div class="nav-item" onclick="showPage('profile')">
+            <i class="fas fa-user"></i>
+            <span>Profile</span>
+        </div>
+    </div>
+</div>
+
+<!-- Edit Profile Page -->
+<div id="editProfile" class="page">
+    <!-- Back Button -->
+    <button class="back-button" onclick="goBack()">
+        <i class="fas fa-arrow-left"></i>
+    </button>
+
+    <!-- Edit Profile Title -->
+    <h1 class="header">Edit Profile</h1>
+
+    <!-- Edit Profile Form -->
+    <div class="edit-profile-form">
+        <!-- Profile Picture Upload -->
+        <div class="profile-picture-upload">
+            <img src="images/user2.jpg" alt="Profile Picture" class="profile-pic">
+            <label for="profile-pic-upload" class="upload-button">Change Photo</label>
+            <input type="file" id="profile-pic-upload" accept="image/*" style="display: none;">
+        </div>
+
+        <!-- Full Name -->
+        <div class="form-group">
+            <label for="full-name">Full Name</label>
+            <input type="text" id="full-name" class="auth-input" placeholder="Enter your full name" value="Fred">
+        </div>
+
+        <!-- Email Address -->
+        <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" class="auth-input" placeholder="Enter your email" value="fred@example.com">
+        </div>
+
+        <!-- Bio -->
+        <div class="form-group">
+            <label for="bio">Bio</label>
+            <textarea id="bio" class="auth-input message-input" placeholder="Tell us about yourself">SUPPORT LOCAL BUSINESSES!!!!!!</textarea>
+        </div>
+
+        <!-- Save Changes Button -->
+        <button class="landing-button" onclick="saveProfileChanges()">Save Changes</button>
     </div>
 
     <!-- Navigation Bar -->
