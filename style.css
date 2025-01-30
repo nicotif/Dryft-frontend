@@ -230,3 +230,55 @@ body {
 .star-button:hover i {
     color: #4a6a4a; /* Darker green on hover */
 }
+
+/* Token Top Ten Section */
+.token-top-ten {
+    margin: 20px 0;
+}
+
+.token-top-ten h2 {
+    font-size: 24px;
+    color: #648268;
+    margin-bottom: 15px;
+}
+
+.token-scroll-container {
+    display: flex;
+    overflow-x: auto;
+    gap: 15px;
+    padding-bottom: 10px; /* Space for scrollbar */
+}
+
+.token-scroll-container::-webkit-scrollbar {
+    height: 8px;
+}
+
+.token-scroll-container::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+.token-scroll-container::-webkit-scrollbar-thumb {
+    background: #648268;
+    border-radius: 10px;
+}
+
+.token-item {
+    flex: 0 0 auto;
+    width: 120px;
+    text-align: center;
+}
+
+.token-item img {
+    width: 100%;
+    height: 120px;
+    border-radius: 15px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.token-item p {
+    font-size: 14px;
+    color: #648268;
+    margin: 0;
+}
