@@ -319,7 +319,7 @@
     </button>
 
     <!-- Settings Icon -->
-    <div class="settings-icon">
+    <div class="settings-icon" onclick="showPage('settings')">
         <i class="fas fa-cog"></i>
     </div>
 
@@ -351,7 +351,7 @@
             <!-- Followers and Following -->
             <div class="stats">
                 <div class="stat">
-                    <span class="stat-number">1.1m</span>
+                    <span class="stat-number" id="follower-count">1.1m</span>
                     <span class="stat-label">Followers</span>
                 </div>
                 <div class="stat">
@@ -361,13 +361,16 @@
             </div>
 
             <!-- Follow Button -->
-            <button class="follow-button">Follow</button>
+            <button class="follow-button" id="follow-button" onclick="toggleFollow()">Follow</button>
 
             <!-- Bio -->
             <div class="bio-section">
                 <h2>Bio</h2>
                 <p>SUPPORT LOCAL BUSINESSES!!!!!!</p>
             </div>
+
+            <!-- Post Button -->
+            <button class="post-button">Post</button>
         </div>
     </div>
 
@@ -378,40 +381,35 @@
             <img src="images/coffee1.jpg" alt="Gallery Image 1">
             <img src="images/surf1.jpg" alt="Gallery Image 2">
             <img src="images/italian1.jpg" alt="Gallery Image 3">
-            <img src="images/post1.jpg" alt="Gallery Image 4">
-            <img src="images/italian2.jpg" alt="Gallery Image 5">
-            <img src="images/coffee3.jpg" alt="Gallery Image 6">
+            <img src="images/surf3.jpg" alt="Gallery Image 4">
+            <img src="images/coffee2.jpg" alt="Gallery Image 5">
+            <img src="images/sushi1.jpg" alt="Gallery Image 6">
         </div>
     </div>
 
-    <!-- Post Button -->
-    <button class="post-button">Post</button>
+    <!-- Navigation Bar -->
+    <div class="nav-bar">
+        <div class="nav-item" onclick="showPage('home')">
+            <i class="fas fa-home"></i>
+            <span>Home</span>
+        </div>
+        <div class="nav-item" onclick="showPage('feed')">
+            <i class="fas fa-list"></i>
+            <span>Feed</span>
+        </div>
+        <div class="nav-item logo-nav" onclick="showPage('tokens')">
+            <img src="images/logo.png" alt="DRYFT Logo">
+        </div>
+        <div class="nav-item" onclick="showPage('map')">
+            <i class="fas fa-map-marked"></i>
+            <span>Map</span>
+        </div>
+        <div class="nav-item" onclick="showPage('profile')">
+            <i class="fas fa-user"></i>
+            <span>Profile</span>
+        </div>
+    </div>
 </div>
-
-                <!-- Navigation Bar -->
-                <div class="nav-bar">
-                    <div class="nav-item" onclick="showPage('home')">
-                        <i class="fas fa-home"></i>
-                        <span>Home</span>
-                    </div>
-                    <div class="nav-item" onclick="showPage('feed')">
-                        <i class="fas fa-list"></i>
-                        <span>Feed</span>
-                    </div>
-                    <div class="nav-item logo-nav" onclick="showPage('tokens')">
-                        <img src="images/logo.png" alt="DRYFT Logo">
-                    </div>
-                    <div class="nav-item" onclick="showPage('map')">
-                        <i class="fas fa-map-marked"></i>
-                        <span>Map</span>
-                    </div>
-                    <div class="nav-item" onclick="showPage('profile')">
-                        <i class="fas fa-user"></i>
-                        <span>Profile</span>
-                    </div>
-                </div>
-            </div>
-
     <!-- Map Page -->
     <div id="map" class="page">
         <button class="back-button" onclick="goBack()">
@@ -526,6 +524,67 @@
             </div>
         </div>
 
+<!-- Settings Page -->
+<div id="settings" class="page">
+    <!-- Back Button -->
+    <button class="back-button" onclick="goBack()">
+        <i class="fas fa-arrow-left"></i>
+    </button>
+
+    <!-- Settings Title -->
+    <h1 class="settings-title">Settings</h1>
+
+    <!-- Settings Options -->
+    <div class="settings-options">
+        <!-- Edit Profile -->
+        <div class="settings-item" onclick="showPage('editProfile')">
+            <div class="settings-button">Edit Profile</div>
+        </div>
+
+        <!-- Favorites -->
+        <div class="settings-item" onclick="showPage('favorites')">
+            <div class="settings-button">Favorites</div>
+        </div>
+
+        <!-- Friends -->
+        <div class="settings-item" onclick="showPage('friends')">
+            <div class="settings-button">Friends</div>
+        </div>
+
+        <!-- Contact Us -->
+        <div class="settings-item" onclick="showPage('contactUs')">
+            <div class="settings-button">Contact Us!</div>
+        </div>
+
+        <!-- Log Out -->
+        <div class="settings-item" onclick="logOut()">
+            <div class="settings-button logout-button">Log Out</div>
+        </div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <div class="nav-bar">
+        <div class="nav-item" onclick="showPage('home')">
+            <i class="fas fa-home"></i>
+            <span>Home</span>
+        </div>
+        <div class="nav-item" onclick="showPage('feed')">
+            <i class="fas fa-list"></i>
+            <span>Feed</span>
+        </div>
+        <div class="nav-item logo-nav" onclick="showPage('tokens')">
+            <img src="images/logo.png" alt="DRYFT Logo">
+        </div>
+        <div class="nav-item" onclick="showPage('map')">
+            <i class="fas fa-map-marked"></i>
+            <span>Map</span>
+        </div>
+        <div class="nav-item" onclick="showPage('profile')">
+            <i class="fas fa-user"></i>
+            <span>Profile</span>
+        </div>
+    </div>
+</div>
     
 
     <script src="script.js"></script>
