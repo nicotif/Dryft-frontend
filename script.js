@@ -53,3 +53,21 @@ document.querySelectorAll('.account-button').forEach(button => {
         this.classList.add('active');
     });
 });
+
+// Add to your existing script.js
+function toggleLike(button) {
+    const heartIcon = button.querySelector('i');
+    const likeCount = button.querySelector('.like-count');
+    
+    if (heartIcon.classList.contains('far')) {
+        heartIcon.classList.remove('far');
+        heartIcon.classList.add('fas');
+        likeCount.textContent = parseInt(likeCount.textContent) + 1;
+        button.classList.add('liked');
+    } else {
+        heartIcon.classList.remove('fas');
+        heartIcon.classList.add('far');
+        likeCount.textContent = parseInt(likeCount.textContent) - 1;
+        button.classList.remove('liked');
+    }
+}
