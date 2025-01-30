@@ -10,11 +10,21 @@
 </head>
 <body>
     <!-- Landing Page -->
-    <div id="landing" class="page active-page">
-        <h1 class="header">DRYFT</h1>
-        <button class="landing-button" onclick="showPage('signup')">GET STARTED</button>
-        <button class="landing-button" onclick="showPage('login')">LOG IN</button>
+<div id="landing" class="page active-page">
+    <div class="landing-bg">
+        <img src="images/bg-pattern-1.png" class="bg-pattern pattern-1">
+        <img src="images/bg-pattern-2.png" class="bg-pattern pattern-2">
     </div>
+    
+    <div class="landing-content">
+        <img src="images/logo.png" class="main-logo">
+        <h1 class="header">DRIFT</h1>
+        <div class="auth-buttons">
+            <button class="landing-button" onclick="showPage('signup')">GET STARTED</button>
+            <button class="landing-button" onclick="showPage('login')">LOG IN</button>
+        </div>
+    </div>
+</div>
 
     <!-- Login Page -->
     <div id="login" class="page">
