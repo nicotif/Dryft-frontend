@@ -17,6 +17,8 @@ body {
     display: none;
     padding: 20px;
     padding-bottom: 80px; /* Space for navigation */
+    padding-top: 60px;  /* Extra top padding, if needed */
+    padding-bottom: 80px;
 }
 
 .active-page {
