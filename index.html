@@ -57,6 +57,10 @@
         <button class="back-button" onclick="goBack()">
             <i class="fas fa-arrow-left"></i>
         </button>
+        <!-- Star Button -->
+        <button class="star-button" onclick="showPage('starOfTheWeek')">
+            <i class="fas fa-star"></i>
+        </button>
         <div class="search-bar">
             <input type="text" class="auth-input" placeholder="Search">
         </div>
@@ -80,7 +84,7 @@
                 <span>Feed</span>
             </div>
             <div class="nav-item logo-nav" onclick="showPage('tokens')">
-                <img src="images/logo.png" alt="DRIFT Logo">
+                <img src="images/logo.png" alt="DRYFT Logo">
             </div>
             <div class="nav-item" onclick="showPage('map')">
                 <i class="fas fa-map-marked"></i>
@@ -161,6 +165,20 @@
             <!-- Same navigation bar structure -->
         </div>
     </div>
+
+    <!-- Star of the Week Page -->
+<div id="starOfTheWeek" class="page">
+    <!-- Back Button -->
+    <button class="back-button" onclick="goBack()">
+        <i class="fas fa-arrow-left"></i>
+    </button>
+
+    <h2 class="header">Star of the Week</h2>
+    <div class="business-card">
+        <h4>Pizza Planet</h4>
+        <p>Congratulations! Pizza Planet is this week's star business.</p>
+    </div>
+</div>
 
     <script src="script.js"></script>
 </body>
