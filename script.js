@@ -71,3 +71,4 @@ function toggleLike(button) {
         button.classList.remove('liked');
     }
 }
+
