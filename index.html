@@ -585,7 +585,115 @@
         </div>
     </div>
 </div>
-    
+
+<!-- Contact Us Page -->
+<div id="contactUs" class="page">
+    <!-- Back Button -->
+    <button class="back-button" onclick="goBack()">
+        <i class="fas fa-arrow-left"></i>
+    </button>
+
+<!-- Contact Us Button in Settings Page -->
+<div class="settings-item" onclick="showPage('contactUs')">
+    <div class="settings-button">Contact Us!</div>
+</div>
+
+    <!-- Contact Form -->
+    <div class="contact-form">
+        <input type="text" class="auth-input" placeholder="Full Name">
+        <input type="email" class="auth-input" placeholder="Email Address">
+        <input type="text" class="auth-input" placeholder="Subject">
+        <textarea class="auth-input message-input" placeholder="Message"></textarea>
+        <button class="landing-button" onclick="submitContactForm()">Submit</button>
+    </div>
+
+    <!-- Confirmation Message -->
+    <p class="confirmation-message">We will get back to you asap :)</p>
+
+    <!-- Navigation Bar -->
+    <div class="nav-bar">
+        <div class="nav-item" onclick="showPage('home')">
+            <i class="fas fa-home"></i>
+            <span>Home</span>
+        </div>
+        <div class="nav-item" onclick="showPage('feed')">
+            <i class="fas fa-list"></i>
+            <span>Feed</span>
+        </div>
+        <div class="nav-item logo-nav" onclick="showPage('tokens')">
+            <img src="images/logo.png" alt="DRYFT Logo">
+        </div>
+        <div class="nav-item" onclick="showPage('map')">
+            <i class="fas fa-map-marked"></i>
+            <span>Map</span>
+        </div>
+        <div class="nav-item" onclick="showPage('profile')">
+            <i class="fas fa-user"></i>
+            <span>Profile</span>
+        </div>
+    </div>
+</div>
+
+<!-- Friends Page -->
+<div id="friends" class="page">
+    <!-- Back Button -->
+    <button class="back-button" onclick="goBack()">
+        <i class="fas fa-arrow-left"></i>
+    </button>
+
+    <!-- Friends Title -->
+    <h1 class="header">Friends</h1>
+
+    <!-- Friends List -->
+    <div class="friends-list">
+        <!-- Friend 1: Mav -->
+        <div class="friend-item">
+            <img src="images/friend1.jpg" alt="Mav" class="friend-avatar">
+            <span class="friend-name">Mav</span>
+        </div>
+
+        <!-- Friend 2: Steven -->
+        <div class="friend-item">
+            <img src="images/friend2.jpg" alt="Steven" class="friend-avatar">
+            <span class="friend-name">Steven</span>
+        </div>
+
+        <!-- Friend 3: Dwayne -->
+        <div class="friend-item">
+            <img src="images/friend3.jpg" alt="Dwayne" class="friend-avatar">
+            <span class="friend-name">Dwayne</span>
+        </div>
+
+        <!-- Friend 4: Casey -->
+        <div class="friend-item">
+            <img src="images/friend4.jpg" alt="Casey" class="friend-avatar">
+            <span class="friend-name">Casey</span>
+        </div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <div class="nav-bar">
+        <div class="nav-item" onclick="showPage('home')">
+            <i class="fas fa-home"></i>
+            <span>Home</span>
+        </div>
+        <div class="nav-item" onclick="showPage('feed')">
+            <i class="fas fa-list"></i>
+            <span>Feed</span>
+        </div>
+        <div class="nav-item logo-nav" onclick="showPage('tokens')">
+            <img src="images/logo.png" alt="DRYFT Logo">
+        </div>
+        <div class="nav-item" onclick="showPage('map')">
+            <i class="fas fa-map-marked"></i>
+            <span>Map</span>
+        </div>
+        <div class="nav-item" onclick="showPage('profile')">
+            <i class="fas fa-user"></i>
+            <span>Profile</span>
+        </div>
+    </div>
+</div>
 
     <script src="script.js"></script>
 </body>

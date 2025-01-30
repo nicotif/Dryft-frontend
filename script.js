@@ -81,3 +81,35 @@ function showPage(pageId) {
     // Show requested page
     document.getElementById(pageId).classList.add('active-page');
 }
+
+function logOut() {
+    showPage('landing'); // Redirect to the landing page
+}
+
+// Function to handle contact form submission
+function submitContactForm() {
+    // Get form values
+    const fullName = document.querySelector('#contactUs input[placeholder="Full Name"]').value;
+    const email = document.querySelector('#contactUs input[placeholder="Email Address"]').value;
+    const subject = document.querySelector('#contactUs input[placeholder="Subject"]').value;
+    const message = document.querySelector('#contactUs .message-input').value;
+
+    // Validate form fields
+    if (!fullName || !email || !subject || !message) {
+        alert("Please fill out all fields.");
+        return;
+    }
+
+    // Simulate form submission (replace with actual backend logic)
+    console.log("Form Submitted:", { fullName, email, subject, message });
+    alert("Thank you for contacting us! We will get back to you soon.");
+
+    // Clear the form
+    document.querySelector('#contactUs input[placeholder="Full Name"]').value = "";
+    document.querySelector('#contactUs input[placeholder="Email Address"]').value = "";
+    document.querySelector('#contactUs input[placeholder="Subject"]').value = "";
+    document.querySelector('#contactUs .message-input').value = "";
+
+    // Optionally, redirect to another page
+    showPage('home');
+}
