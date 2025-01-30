@@ -1,0 +1,151 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Bungee', cursive;
+}
+
+body {
+    background-color: white;
+    max-width: 414px;
+    margin: 0 auto;
+    min-height: 100vh;
+    position: relative;
+}
+
+.page {
+    display: none;
+    padding: 20px;
+    padding-bottom: 80px; /* Space for navigation */
+}
+
+.active-page {
+    display: block;
+}
+
+.header {
+    text-align: center;
+    font-size: 48px;
+    margin: 20px 0;
+    color: #648268;
+}
+
+/* Navigation Bar */
+.nav-bar {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    max-width: 380px;
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 20px;
+    border-radius: 30px;
+    box-shadow: 0 -2px 15px rgba(0,0,0,0.1);
+    margin-bottom: 10px;
+}
+
+.nav-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #648268;
+    font-size: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    padding: 8px 12px;
+    border-radius: 20px;
+}
+
+.nav-item:hover {
+    background: #f5f5f5;
+}
+
+.nav-item i {
+    font-size: 20px;
+    margin-bottom: 4px;
+}
+
+.logo-nav img {
+    width: 36px;
+    height: 36px;
+    margin-bottom: 2px;
+}
+
+.logo-nav {
+    position: relative;
+    top: -15px;
+    background: #648268;
+    padding: 15px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.logo-nav:hover {
+    transform: scale(1.1);
+}
+
+/* Rest of your existing styles */
+.landing-button {
+    background-color: #648268;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 10px;
+    border: none;
+    margin: 10px 0;
+    width: 100%;
+    font-size: 24px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+}
+
+.auth-input {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    margin: 5px 0;
+    background: #648268;
+    color: white;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.auth-input::placeholder {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.account-button {
+    width: 48%;
+    padding: 15px;
+    margin: 5px 0;
+    background: #648268;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.business-card {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    margin: 10px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.map-container {
+    height: 300px;
+    background: #f0f0f0;
+    border-radius: 15px;
+    margin: 15px 0;
+}
+
+.profile-stats {
+    display: flex;
+    gap: 20px;
+    margin: 15px 0;
+    justify-content: center;
+}

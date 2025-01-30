@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dryft - Local Discovery</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Landing Page -->
+    <div id="landing" class="page active-page">
+        <h1 class="header">DRYFT</h1>
+        <button class="landing-button" onclick="showPage('signup')">GET STARTED</button>
+        <button class="landing-button" onclick="showPage('login')">LOG IN</button>
+    </div>
+
+    <!-- Login Page -->
+    <div id="login" class="page">
+        <h1 class="header">LOG IN</h1>
+        <div class="form-group">
+            <input type="text" class="auth-input" placeholder="USERNAME">
+            <input type="password" class="auth-input" placeholder="PASSWORD">
+        </div>
+        <button class="landing-button" onclick="showPage('home')">LOGIN</button>
+    </div>
+
+    <!-- Signup Page -->
+    <div id="signup" class="page">
+        <h1 class="header">SIGN UP</h1>
+        <div class="form-group">
+            <button class="account-button">BUSINESS</button>
+            <button class="account-button">CUSTOMER</button>
+            <input type="text" class="auth-input" placeholder="FULL NAME">
+            <input type="email" class="auth-input" placeholder="EMAIL">
+            <input type="text" class="auth-input" placeholder="USERNAME">
+            <input type="password" class="auth-input" placeholder="PASSWORD">
+        </div>
+        <button class="landing-button" onclick="showPage('home')">SIGN UP</button>
+    </div>
+
+    <!-- Home Page -->
+    <div id="home" class="page">
+        <div class="search-bar">
+            <input type="text" class="auth-input" placeholder="Search">
+        </div>
+        
+        <div class="category-section">
+            <h3 class="category-title">Italian Food</h3>
+            <div class="business-card">
+                <h4>Freznos</h4>
+                <p>#382 Ranking</p>
+            </div>
+        </div>
+
+        <!-- Navigation Bar -->
+        <div class="nav-bar">
+            <div class="nav-item" onclick="showPage('home')">
+                <i class="fas fa-home"></i>
+                <span>Home</span>
+            </div>
+            <div class="nav-item" onclick="showPage('feed')">
+                <i class="fas fa-list"></i>
+                <span>Feed</span>
+            </div>
+            <div class="nav-item logo-nav" onclick="showPage('tokens')">
+                <img src="logo-icon.png" alt="DRIFT Logo">
+            </div>
+            <div class="nav-item" onclick="showPage('map')">
+                <i class="fas fa-map-marked"></i>
+                <span>Map</span>
+            </div>
+            <div class="nav-item" onclick="showPage('profile')">
+                <i class="fas fa-user"></i>
+                <span>Profile</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Feed Page -->
+    <div id="feed" class="page">
+        <h2 class="header">FEED</h2>
+        <div class="business-card">
+            <h4>Recent Updates</h4>
+            <p>New deals at Freznos!</p>
+        </div>
+        <!-- Navigation Bar -->
+        <div class="nav-bar">
+            <!-- Same navigation bar structure -->
+        </div>
+    </div>
+
+    <!-- Profile Page -->
+    <div id="profile" class="page">
+        <div class="profile-header">
+            <h2>FREZNOS</h2>
+            <div class="profile-stats">
+                <div>1200 Followers</div>
+                <div>100 Following</div>
+            </div>
+            <button class="landing-button">FOLLOW</button>
+        </div>
+        
+        <div class="business-info">
+            <p>Your neighborhood spot for fresh, locally-crafted pizza.</p>
+            <h3>DEALS</h3>
+            <p>20% off • 10% off • 15% off • 30% off</p>
+        </div>
+        <!-- Navigation Bar -->
+        <div class="nav-bar">
+            <!-- Same navigation bar structure -->
+        </div>
+    </div>
+
+    <!-- Map Page -->
+    <div id="map" class="page">
+        <div class="map-container"></div>
+        <!-- Navigation Bar -->
+        <div class="nav-bar">
+            <!-- Same navigation bar structure -->
+        </div>
+    </div>
+
+    <!-- Tokens Page -->
+    <div id="tokens" class="page">
+        <h2 class="header">TOKENS</h2>
+        <div class="business-card">
+            <h4>Pizza Planet</h4>
+            <p>Collected: 8</p>
+        </div>
+        <!-- Navigation Bar -->
+        <div class="nav-bar">
+            <!-- Same navigation bar structure -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
