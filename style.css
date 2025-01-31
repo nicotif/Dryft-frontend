@@ -32,7 +32,7 @@ body {
     color: #648268;
 }
 
-/* Navigation Bar */
+/* Navigation Bar Styles */
 .nav-bar {
     position: fixed;
     bottom: 0;
@@ -45,7 +45,7 @@ body {
     justify-content: space-between;
     padding: 5px 10px;
     border-radius: 20px;
-    box-shadow: 0 -2px 15px rgba(0,0,0,0.1);
+    box-shadow: 0 -2px 15px rgba(0, 0, 0, 0.1);
     margin-bottom: 10px;
 }
 
@@ -82,11 +82,18 @@ body {
     background: #648268;
     padding: 15px;
     border-radius: 50%;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .logo-nav:hover {
     transform: scale(1.1);
+}
+
+/* Hide Nav Bar on Landing, Signup, and Login Pages */
+#landing .nav-bar,
+#signup .nav-bar,
+#login .nav-bar {
+    display: none !important; /* Force the rule to take precedence */
 }
 
 .landing-button {
@@ -106,6 +113,30 @@ body {
     transform: scale(1.1);
 }
 
+/* Signup Page Styles */
+.form-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Space between elements */
+}
+
+.account-button {
+    flex: 1; /* Each button takes equal space */
+    padding: 15px;
+    background: #648268;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.account-button.active {
+    background-color: #4a6a4a; /* Darker green for active state */
+}
+
 .auth-input {
     width: 100%;
     padding: 12px;
@@ -119,23 +150,6 @@ body {
 
 .auth-input::placeholder {
     color: rgba(255, 255, 255, 0.8);
-}
-
-.account-button {
-    width: 48%;
-    padding: 15px;
-    margin: 5px 0;
-    background: #648268;
-    color: white;
-    border: none;
-    border-radius: 10px;
-    font-size: 16px;
-    cursor: pointer;
-}
-
-.account-button.active {
-    background-color: #4a6a4a;
-    color: white;
 }
 
 .business-card {
@@ -412,13 +426,6 @@ body {
 .post-caption strong {
     color: #648268;
     margin-right: 5px;
-}
-
-/* Hide nav-bar on specific pages */
-#landing .nav-bar,
-#login .nav-bar,
-#signup .nav-bar {
-    display: none;
 }
 
 /* Profile Page Styles */
@@ -896,7 +903,7 @@ body {
 .token-image {
     width: 100%; /* Make tokens responsive */
     height: auto; /* Maintain aspect ratio */
-    border-radius: 50%; /* Make tokens circular */
+    border-radius: 0%; /* Make tokens circular */
     object-fit: cover; /* Ensure images fit nicely */
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
 }
@@ -985,4 +992,133 @@ body {
     color: #648268;
     font-family: 'Bungee', cursive;
     margin-top: 20px;
+}
+
+/* Maps Page Styles */
+#map {
+    padding: 20px;
+    padding-top: 60px; /* Space for the header */
+    padding-bottom: 80px; /* Space for the navigation bar */
+}
+
+/* Search Bar */
+.search-bar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.search-input {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    background: #648268;
+    color: white;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.search-input::placeholder {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.search-button {
+    background: #648268;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.search-button:hover {
+    background: #4a6a4a; /* Darker green on hover */
+}
+
+/* Map Container */
+.map-container {
+    width: 100%;
+    height: 400px; /* Adjust height as needed */
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.map-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the image fits nicely */
+}
+
+/* Star of the Week Page Styles */
+#starOfTheWeek {
+    padding: 20px;
+    padding-top: 60px; /* Space for the header */
+    padding-bottom: 80px; /* Space for the navigation bar */
+}
+
+/* Selected Token Section */
+.selected-token {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.selected-token .token-image {
+    width: 230px;
+    height: 230px;
+    object-fit: cover;
+}
+
+.selected-token .token-name {
+    font-size: 32px;
+    color: black;
+    font-family: 'Bungee', cursive;
+    margin-top: 10px;
+}
+
+/* Star User Section */
+.star-user {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.star-user .user-avatar {
+    width: 102px;
+    height: 102px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.star-user .username {
+    font-size: 32px;
+    color: black;
+    font-family: 'Bungee', cursive;
+    margin-top: 10px;
+}
+
+.star-user .user-gallery-title {
+    font-size: 24px;
+    color: black;
+    font-family: 'Bungee', cursive;
+    margin-top: 5px;
+}
+
+/* Token Gallery Section */
+.token-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.token-gallery .gallery-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 15px;
+    object-fit: cover;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }

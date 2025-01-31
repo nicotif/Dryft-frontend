@@ -42,6 +42,27 @@ function goBack() {
         case 'tokens':
             previousPage = 'home';
             break;
+        case 'starOfTheWeek':
+            previousPage = 'home';
+            break;    
+        case 'settings':
+            previousPage = 'profile';
+            break; 
+        case 'editProfile':
+             previousPage = 'settings';
+            break;
+        case 'favorites':
+            previousPage = 'settings';
+            break;
+        case 'friends':
+            previousPage = 'settings';
+            break;
+        case 'contactUs':
+            previousPage = 'settings';
+            break;
+        case 'scanToken':
+            previousPage = 'tokens';
+            break;
     }
 
     showPage(previousPage);
@@ -131,3 +152,4 @@ function toggleLike(button) {
         button.classList.remove('liked');
     }
 }
+
